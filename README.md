@@ -453,4 +453,12 @@ timestamp.
 - The checkpoint loader automatically handles Python/R `torch` naming
   differences for bidirectional LSTM weights.
 
+users use the `renv` environment directly
+A fresh user can clone the repo, then in R run:
+
+```r
+install.packages("renv")
+renv::restore()
+```
+
 

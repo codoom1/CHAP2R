@@ -22,8 +22,7 @@ data/preprocessed/**
 !data/preprocessed/62193/2000-01-07/2000-01-07.h5
 
 # Python checkpoints are optional conversion inputs. Keep them outside git.
-CHAP_trained_models/pre-trained-models-pt/*
-!CHAP_trained_models/pre-trained-models-pt/.gitkeep
+CHAP_trained_models/pre-trained-models-pt/
 
 # Logs
 *.log
