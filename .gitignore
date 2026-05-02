@@ -1,0 +1,29 @@
+# macOS / editor files
+.DS_Store
+.Rhistory
+.RData
+.Ruserdata
+.Rproj.user/
+
+# renv: keep lockfile, settings, and activation files; ignore installed packages
+renv/library/
+renv/staging/
+renv/python/
+
+# Runtime outputs
+data/predictions/
+data/tmp/
+
+# Keep only the bundled one-day sample H5 in git; ignore full-study data.
+data/preprocessed/**
+!data/preprocessed/
+!data/preprocessed/62193/
+!data/preprocessed/62193/2000-01-07/
+!data/preprocessed/62193/2000-01-07/2000-01-07.h5
+
+# Python checkpoints are optional conversion inputs. Keep them outside git.
+CHAP_trained_models/pre-trained-models-pt/*
+!CHAP_trained_models/pre-trained-models-pt/.gitkeep
+
+# Logs
+*.log
