@@ -453,32 +453,4 @@ timestamp.
 - The checkpoint loader automatically handles Python/R `torch` naming
   differences for bidirectional LSTM weights.
 
-## GitHub Preparation
 
-This repository contains converted R model checkpoints (`.rds`) and one small
-sample `.h5` file. Use Git LFS before the first commit if you plan to push
-those files to GitHub. Original Python `.pth` checkpoints are ignored by
-`.gitignore` and should be stored outside the repo or downloaded only when
-reconversion is needed.
-
-```bash
-git init
-git lfs install
-git lfs track "*.h5" "*.hdf5" "*.rds"
-git add .gitattributes .gitignore README.md R renv.lock renv/activate.R renv/settings.json
-git add CHAP_trained_models data/preprocessed
-git status
-```
-
-Generated outputs are ignored by `.gitignore`:
-
-```text
-data/predictions/
-data/tmp/
-renv/library/
-```
-
-Before publishing, choose a license for the repository and add a `LICENSE` file.
-If the trained CHAP checkpoints or sample H5 data have redistribution limits,
-move them to a private storage location or a release asset and document how
-users should download them.
